@@ -253,12 +253,12 @@ body {
     object-fit: cover;
 }
 .frame-text h2{
-    font-size: 15px;
-    margin-left: -300px;
+    font-size: 20px;
+    margin-left: -350px;
 }
 .frame-text h4{
-    font-size: 8px;
-    margin-left: -300px;
+    font-size: 10px;
+    margin-left: -350px;
 }
 }
 @media screen and (max-width: 700px) {
@@ -272,12 +272,10 @@ body {
     object-fit: cover;
 }
 .frame-text h2{
-    font-size: 30px;
-    margin-left: -100px;
+    margin-left: -150px;
 }
 .frame-text h4{
-    font-size: 20px;
-    margin-left: -100px;
+    margin-left: -150px;
 }
 }
 @media screen and (max-width: 1000px) {
@@ -291,10 +289,10 @@ body {
     object-fit: cover;
 }
 .frame-text h2{
-    font-size: 30px;
+    font-size: 40px;
 }
 .frame-text h4{
-    font-size: 15px;
+    font-size: 20px;
 }
 }
 .middle {
@@ -331,6 +329,7 @@ body {
 @media screen and (max-width: 1000px){
     .middle {
         grid-template-columns: 1fr ;
+        gap: 12px;
     }
     .com_note{
         margin: 0;
