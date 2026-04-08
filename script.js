@@ -26,11 +26,13 @@ window.addEventListener('scroll', () => {
 );
 
 
+let next = document.getElementById('next');
+if(next !==null){
 let list = document.querySelector('.slider .list');
 let slides = document.querySelectorAll('.slider .list .slides');
 let dots = document.querySelectorAll('.slider .dots li');
 let prev = document.getElementById('prev');
-let next = document.getElementById('next');
+
 
 let active = 0;
 // We use the number of dots (4) to represent the REAL number of slides
@@ -97,7 +99,7 @@ dots.forEach((li, key) => {
     })
 }
 );
-
+}
 
 //......nav....
 const ham2 = document.getElementById('ham2');
@@ -111,9 +113,6 @@ const navbuttons = document.querySelectorAll('.nav .main');
 
 navbuttons.forEach(button=>{
     button.addEventListener('click',function(){
-        navbuttons.forEach(btn=>btn.classList.remove('active'));
-        this.classList.add('active');
-
         if(navMenu.classList.contains('show')){
             navMenu.classList.remove('show');
         }
