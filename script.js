@@ -132,7 +132,7 @@ window.addEventListener('load',()=>{
 
 //------apply------
 (function(){
-     emaijs.init("OM1ipilADegue5Npq");
+     emaijs.init("OM1iPiIADegue5Npq");
 })();
 
 document.getElementById("contact-form")
