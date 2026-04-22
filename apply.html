@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zudiv Tech-World Enterprise request form</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="apply-con">
+        <div class="welcome">
+            <p class="wel-p1">Welcome to Zudiv Tech-World Enterprise </p>
+            <p class="wel-p2">Send us your request by filling the form below</p>
+        </div>
+    <div class="form-con">
+        <form  id="contact-form">
+            <div class="lab">
+                <input type="text" id="fname" name="fname" required>
+                <label for="fname" >First Name</label>
+            </div>
+            
+            <div class="lab">
+                <input type="text" id="lname" name="lname" required>
+                <label for="lname" >Last Name</label>
+            </div>
+             
+            <div class="lab">
+               <input type="email" id="user_email" name="user_email" required>
+               <label for="user_email" >Email Address</label>
+            </div>
+           
+            <div class="lab">
+                  <textarea name="request" id="request" required></textarea>
+                  <label for="request" >Type your request message</label>
+            </div>
+          
+            <button class="but-send" type="submit">Send</button>
+        </form>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdeliver.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

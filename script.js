@@ -120,6 +120,35 @@ navbuttons.forEach(button=>{
 });
 
 
+//------contact us-----
+window.addEventListener('load',()=>{
+    const container=document.getElementById('hi');
+
+    setTimeout(()=>{
+        container.classList.add('active');
+    },500);
+});
+
+
+//------apply------
+(function(){
+     emaijs.init("OM1ipilADegue5Npq");
+})();
+
+document.getElementById("contact-form")
+.addEventListener("submit",function(e){
+    e.preventDefault();
+
+    emailjs.sendForm("service_06xmjjs","template_31s1g68",this)
+          .then(function(){
+            alert("Message sent successfully!");
+          }, function(error){
+            alert("Failed to send message.");
+            console.log(error);
+          });
+});
+
+
 /*const menu = document.getElementById("menu");
 
 window.addEventListener("scroll",  function(){
