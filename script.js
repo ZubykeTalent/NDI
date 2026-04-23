@@ -131,12 +131,16 @@ window.addEventListener('load',()=>{
 
 
 //------apply------
+
+
+
 (function(){
      emaijs.init("OM1iPiIADegue5Npq");
 })();
 
-document.getElementById("contact-form")
-.addEventListener("submit",function(e){
+const contactForm = document.getElementById("contact-form");
+if(contactForm){
+   contactForm.addEventListener("submit",function(e){
     e.preventDefault();
 
     emailjs.sendForm("service_06xmjjs","template_31s1g68",this)
@@ -147,6 +151,7 @@ document.getElementById("contact-form")
             console.log(error);
           });
 });
+}
 
 
 /*const menu = document.getElementById("menu");
