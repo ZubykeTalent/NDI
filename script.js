@@ -104,7 +104,7 @@ dots.forEach((li, key) => {
 //......nav....
 const ham2 = document.getElementById('ham2');
 const navMenu = document.querySelector('.nav');
-
+if(ham2){
 ham2.addEventListener('click',()=>{
     navMenu.classList.toggle('show');
 });
@@ -118,6 +118,7 @@ navbuttons.forEach(button=>{
         }
     });
 });
+}
 
 
 //------contact us-----
