@@ -124,10 +124,11 @@ navbuttons.forEach(button=>{
 //------contact us-----
 window.addEventListener('load',()=>{
     const container=document.getElementById('hi');
-
+if(container){
     setTimeout(()=>{
         container.classList.add('active');
     },500);
+}
 });
 
 
