@@ -108,9 +108,9 @@ if(ham2 && navMenu){
 ham2.addEventListener('click',()=>{
     navMenu.classList.toggle('show');
 });
-
+}
 const navbuttons = document.querySelectorAll('.nav .main');
-
+if(navbuttons.length > 0){
 navbuttons.forEach(button=>{
     button.addEventListener('click',function(){
         if(navMenu.classList.contains('show')){
