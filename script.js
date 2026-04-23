@@ -133,12 +133,11 @@ window.addEventListener('load',()=>{
 //------apply------
 
 
-
+const contactForm = document.getElementById("contact-form");
 (function(){
      emaijs.init("OM1iPiIADegue5Npq");
 })();
 
-const contactForm = document.getElementById("contact-form");
 if(contactForm){
    contactForm.addEventListener("submit",function(e){
     e.preventDefault();
