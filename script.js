@@ -140,6 +140,7 @@ const contactForm = document.getElementById("contact-form");
      emailjs.init("OM1iPiIADegue5Npq");
 })();
 
+
 if(contactForm){
    contactForm.addEventListener("submit",function(e){
     e.preventDefault();
