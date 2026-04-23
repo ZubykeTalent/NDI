@@ -137,7 +137,7 @@ if(container){
 
 const contactForm = document.getElementById("contact-form");
 (function(){
-     emaijs.init("OM1iPiIADegue5Npq");
+     emailjs.init("OM1iPiIADegue5Npq");
 })();
 
 if(contactForm){
